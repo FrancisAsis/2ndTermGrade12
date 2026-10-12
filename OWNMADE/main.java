@@ -1,34 +1,24 @@
 package OWNMADE;
+// PILLAR 3: Inheritance
 
 public class main {
 
     public static void main(String[] args) {
 
-        // REQUIREMENT 9: Parent-type array
-        StoreItem[] items = {
-            new Snack("Piattos", 20, 20.00, "Cheese"),
-            new Snack("Chippy", 15, 10.00, "Spicy"),
-            new Drink("Coca-Cola", 12, 18.00, 250),
-            new Drink("Water", 30, 10.00, 500)
+        // Parent-type array
+        Pet[] pets = {
+            new Dog("Buddy", "Labrador", 3, "Barks and plays"),
+            new Cat("Ming", "Persian", 2, "Meows and sleeps"),
+            new Dog("Max", "Bulldog", 4, "Runs and wags its tail"),
+            new Cat("Luna", "Siamese", 1, "Climbs and plays")
         };
 
         // Test setter validation
-        items[0].setStock(25);
-        items[1].setStock(-5);
+        pets[0].setAge(-1);
 
-        // REQUIREMENT 9: Loop through the array
-        for (StoreItem item : items) {
-            item.showInfo();
-
-            // Show subclass-specific information
-            if (item instanceof Snack) {
-                Snack snack = (Snack) item;
-                System.out.println("Flavor: " + snack.getFlavor());
-            } else if (item instanceof Drink) {
-                Drink drink = (Drink) item;
-                System.out.println("Size: " + drink.getSizeMl() + " ml");
-            }
-
+        // Display all pets
+        for (Pet p : pets) {
+            p.showInfo();
             System.out.println("--------------------");
         }
     }
