@@ -1,3 +1,4 @@
+package others;
 public class parameters {
     
     static void myMethod(int x) {

@@ -1,3 +1,4 @@
+package others;
 
 public class Vehicle {
     private String platenumber;      // private - hidden from others classes
