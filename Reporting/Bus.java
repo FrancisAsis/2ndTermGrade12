@@ -2,7 +2,7 @@ package Reporting;
 
 public class Bus extends Vehicle {
 
-    private int seats; // New field specific to Bus    
+    private int seats;    
 
     public Bus (String platenumber,
                      String drivername,
@@ -22,7 +22,7 @@ public class Bus extends Vehicle {
 
     public static void main(String[] args) {
         Bus b = new Bus("BUS 789", "Aling Rose", 8);
-        b.setPassangers(30);
+        b.setPassengers(30);
         b.showInfo();
         System.out.println("Fare for 6 km: " + b.calculateFare(6));
         System.out.println("Seats: " + b.getSeats());

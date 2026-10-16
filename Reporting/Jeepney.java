@@ -23,15 +23,10 @@ public class Jeepney extends Vehicle {
     public static void main(String[] args) {
 
     Jeepney j = new Jeepney("NXA 123", "Mang Ramor", "Monumento-Devisorian");
-    j.setPassangers(12);
+    j.setPassengers(12);
     j.showInfo();
 
     System.out.println("Route: " + j.getRoute()); 
 
     }
-
-    
 }
-
-
-

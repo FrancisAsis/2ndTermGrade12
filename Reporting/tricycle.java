@@ -1,9 +1,9 @@
 package Reporting;
 
-public class tricycle extends Vehicle {
+public class Tricycle extends Vehicle {
     private String toda; // New field specific to tricycle
 
-    public tricycle(String platenumber,
+    public Tricycle(String platenumber,
                      String drivername,
                       String toda) {
         super(platenumber, drivername); // Call the constructor of the superclass (Vehicle)
@@ -13,14 +13,9 @@ public class tricycle extends Vehicle {
     @Override 
     public double calculateFare(double km) { 
         return 20.00 + (km * 10.00);
-
-
-        
     }
 
     public String getToda() {
         return toda;
     }
-
-    
 }
